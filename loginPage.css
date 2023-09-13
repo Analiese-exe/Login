@@ -1,0 +1,128 @@
+body{
+   /* To use a linear gradient on the background image for the entire website */
+    background-image: url("./pexels.jpg");
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.backdrop{
+    border-radius: 50%;
+    height: 30em;
+    width: 30em;
+    padding: 2em;
+   margin: 0 auto;
+   margin-top: 10%;
+   background-color: rgba(255, 255, 255, 0.35); /* semi-transparent white */
+   backdrop-filter: blur(10px); /* blur the background */
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border: 0.1px solid rgb(250, 235, 175);
+    z-index: 1;
+}
+.form{
+    filter: none;
+    text-align: center;
+    position: relative;
+}
+.header > h1{
+    color: white;
+    float: left;
+    font-size: 3em;
+    position: absolute;
+    top: 0.6em;
+    left: 0.7em;
+}
+.login{
+    position: absolute;
+    top: 9em;
+    left: 2em;
+    
+}
+label{
+    color: rgb(95, 95, 22);
+    font-size: 20px;
+}
+input{
+    border-radius: 2px;
+    border:1px solid transparent;
+     padding: 8px;
+     width: 300px;
+   
+}
+button{
+    border-radius: 3px;
+    border: 1px solid transparent;
+    padding: 12px;
+    width: 90px;
+    color: rgb(124, 117, 40);
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+button:hover{
+    background-color: rgb(220, 183, 152);
+    transition: 0.5ms;
+}
+::placeholder{
+    color: rgb(124, 117, 40);
+    font-family: 'Raleway', sans-serif;
+}
+::placeholder:hover{
+    background-color: rgb(220, 183, 152);
+}
+p{
+    color: white;
+    position: relative;
+    top: 0px;
+    right: -60px;;
+}
+a{
+    color: rgb(158, 75, 7);
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 540px){
+    html{
+        font-size: 90%;
+    }
+    .backdrop{
+        padding: 2em;
+        width: 29.5em;
+        height: 29.5em;
+    }
+    .header h1{
+        font-size: 2.5em;
+        top: 1em;
+        left: 1.05em;
+    }
+   
+}
+@media (max-width: 500px){
+    html{
+        font-size: 72.5%;
+    }
+    input{
+        width: 110%;
+    }
+    .backdrop{
+        padding: 2em;
+        width: 24em;
+        height: 24em;
+    }
+}
+@media (min-width: 750px){
+    .form{
+        position: relative;
+        top:3em;
+        left: 3em;
+    }
+}
+
